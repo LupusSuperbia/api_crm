@@ -1,14 +1,6 @@
 {
   "clientes": [
     {
-      "nombre": "AgustínAct ",
-      "empresa": "Andre",
-      "email": "agussamperi@gmail.com",
-      "telefono": "02616652883",
-      "notas": "",
-      "id": 1
-    },
-    {
       "nombre": "Agustín",
       "empresa": "asdasd",
       "email": "agussamperi@gmail.com",
