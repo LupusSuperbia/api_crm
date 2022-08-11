@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Formulario from '../components/Formulario'
+import Spinner from '../components/Spinner'
 
 const EditarCliente = () => {
   const [cliente, setCliente] = useState({});
@@ -27,13 +28,15 @@ const EditarCliente = () => {
 
   return (
     <>
+    {cargando ? <Spinner/> : (
+      <>
     <h1 className='font-black text-4xl text-blue-900 text-center'>Editar Cliente</h1>
     <p className='mt-3'>Utiliza Este Formulario Para Editar datos de un cliente</p>
     {cliente?.nombre ? (<Formulario 
       cliente={cliente}
       cargando={cargando}
     />) : <p>Cliente ID No Válido</p>}
-    
+    </>)}
 </>
   )
 }
